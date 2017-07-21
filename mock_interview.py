@@ -47,19 +47,24 @@ Q4: List 2-3 attacks that web applications are vulnerable to. How do these attac
 
 Answer:
 
-Two types of attacks that come to mind is SQL injection attacks and brute force attacks. SQL
-injection attacks is when a hacker/attacker inputs a string using SQL in a search box, login
-forms or into a URL in order to extract data from the applications database. I think the first
-line of defense is to encrypt the data by storing it as a salted hash.  the second line of
-defense is to incorporate the principle of least privilege so only certain users have permission
-to access the data.
+Three types of attacks that come to mind is SQL injection attacks, cross-site scripting and
+brute force attacks. SQL injection attacks is when a hacker/attacker inputs a string using
+SQL in a search box, login forms or into a URL in order to extract data from the applications
+database. I think the first line of defense is to encrypt the data by storing it as a salted
+hash.  the second line of defense is to incorporate the principle of least privilege so only
+certain users have permission to access the data.
 
-The second type of attack that web applications are vulnerable to is brute force attacks. Brute
-force is a trial and error strategy that attackers use to decode encrypted data and/or passwords.
-It's a time consuming process because the program is attempting to input all possible character
-combinations in order to "crack the code".  I think the two easiest solutions to this problem is
-using CAPTCHA to distinguish between a computer and a human and to lock out accounts after X number
-of attempted logins.
+Cross-site scripting is when attackers insert JavaScript in pages of a website in order to alter
+the contents of the website or send sensitive information to a different server.  I think the best
+way to prevent this is to escape before inserting untrusted data into JavaScript data values and
+escape before unserting untrusted data into URL parameters.
+
+The third type of attack that I mentioned is brute force attacks. Brute force is a trial and
+error strategy that attackers use to decode encrypted data and/or passwords. It's a time
+consuming process because the program is attempting to input all possible character combinations
+in order to "crack the code".  I think the two easiest solutions to this problem is using CAPTCHA
+to distinguish between a computer and a human and to lock out accounts after X number of attempted
+logins.
 
 
 
