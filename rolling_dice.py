@@ -6,6 +6,10 @@ Q5: Below is some starter code for a Flask Web Application. Expand on that and i
     a brief explanation of your code.
 
 Answer:
+
+this is a pretty straightforward task.  Create two die with numbers from 1 to 6.  Call the randint
+function from the random library to generate a random integer then jsonify the output. Keep refreshing
+the page to get different numbers from the dice
 '''
 
 from flask import Flask, jsonify
