@@ -18,16 +18,24 @@ enter key.  I woould append the user input into the list then call each string o
 insert it between <li></li>
 
 '''
-def unorderedList(elements):
-    print("<ul>")
-    for s in elements:
-        ul = "<li>" + str(s) + "</li>"
-        print(ul)
-    print("</ul>")
+
+from flask import Flask
+app = Flask(__name__)
 
 
-if __name__ == "__main__":
-
+@app.route('/')
+def unorderedList():
     string = ['mushrooms', 'peppers', 'pepperoni', 'steak', 'walnuts', 'goat cheese', 'eggplant',
     'garlic sauce']
-    unorderedList(string)
+    ul = "<ul>"
+    for s in string:
+        ul += "<li>" + str(s) + "</li>"
+    ul += "</ul>"
+    return ul
+
+
+
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host='0.0.0.0', port=5000)
