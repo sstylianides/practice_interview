@@ -7,7 +7,9 @@ The two most influential books that I've read is "Learn Python the Hard Way" and
 Python the Hard Way" by Zed Shaw.  Although not entirely about web development, I chose these
 two books because this is what gave me the foundation to dive deeper into web development and
 sharpen my Python skills. These two books definitely gave me the opportunity to get a solid
-understanding of programming in order to become a web developer.
+understanding of programming in order to become a web developer. It also led me to explore other
+languages such as JavaScript, C, and Java as well as working with frameworks such as Django and
+databases such as PostgreSQL.
 
 
 
